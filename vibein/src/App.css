@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+a{
+  color: black ;
+}
+body {
+  /*background-image: url("https://images.unsplash.com/photo-1520252607056-97cbdb04122c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGJhY2tncm91bmQlMjB3aGF0c2FwcHxlbnwwfHwwfHRlYWw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");  
+  background-image: url("https://images.unsplash.com/photo-1520252607056-97cbdb04122c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGJhY2tncm91bmQlMjB3aGF0c2FwcHxlbnwwfHwwfHRlYWw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");  */
+  
+  background-image: url("https://i.pinimg.com/originals/a9/13/12/a91312b7e47b919309dbc014a21053cc.jpg"); 
+  
+ 
+}
+/*.image
+  {
+  width:100%;
+  height : 100%;
+  background:url("https://i.pinimg.com/originals/a9/13/12/a91312b7e47b919309dbc014a21053cc.jpg");
+  border:2px solid;
+  border-color:gray;
+  }*/
+.transparentbox
+  {
+    width: 110%; height : 20%;
+  background-color:#ffffff;
+  border:1px;
+  border-color:#0d252b;
+  opacity: 0.9;
+  
+  
+  }
+.brand-logo,h2{
+  font-family: 'Fondamento', cursive;
+}
+.brand-tag{
+  font-family: 'Redressed', cursive;
+}
+.link{
+  color:rgb(42, 99, 91) !important;
+  font-family: 'Tangerine', cursive;
+   font-size: x-large;
+}
+/* .h4{
+  margin-top: 0.67em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+}*/
+.auth-card{
+  padding : 20px;
+  text-align : center;
+  max-width: 400px;
+  margin : 80px auto;
+  background-color: #eafcff ;
+}
+.input-field input[type = text]:focus{
+  border-bottom : 1px solid teal !important;
+  box-shadow : 0 1px 0 0 teal !important;
+}
+.input-field input[type = password]:focus{
+  border-bottom : 1px solid teal !important;
+  box-shadow : 0 1px 0 0 teal !important;
+}
+
+.gallery{
+  display : flex;
+  flex-wrap : wrap;
+  justify-content : space-around;
+}
+.items{
+  width : 28%;
+  border-style: double ;
+  border-color: gray;
+  background-color: whitesmoke;
+    padding : 10px;
+}
+.home_card{
+  max-width : 500px;
+  height : max-content;
+  margin : 26px auto;
+
+}
+.fa {
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+  color:teal
+}
+
+.fa:hover {
+  color: red;
+}
+#toast-container{
+  top : 80px !important;
+  right : 50px !important;
+  left : auto !important;
+}
