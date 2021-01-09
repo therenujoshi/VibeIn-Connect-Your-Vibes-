@@ -86,7 +86,7 @@ const SignUp = ()=>{
                     </div>
                 </div>
                <button className = "btn waves-effect waves-light #00695c teal darken-3" onClick ={()=>PostData()}>SignUp 🔗 </button><br/>
-               <h5><Link to = '/signin' className = 'link' >Already have an account? 🤔</Link></h5>
+               <h5 style={{marginBottom:"10px"}}><Link to = '/signin' className = 'link' >Already have an account? 🤔</Link></h5>
           </div>
       </div>
     )
