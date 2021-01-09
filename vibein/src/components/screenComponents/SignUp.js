@@ -70,7 +70,7 @@ const SignUp = ()=>{
 
     return(
       <div className = 'Mycard'>
-          <div className = 'card large auth-card'>
+          <div className = 'card auth-card'>
                <h2 className = 'brand-logo'>VibeIn</h2>
                <h5 className = 'brand-tag'>Connect Your Vibes!</h5>
                <input type = 'text' placeholder = 'Username' value = {name} onChange = {(e)=> setName(e.target.value)}/>
@@ -86,7 +86,7 @@ const SignUp = ()=>{
                     </div>
                 </div>
                <button className = "btn waves-effect waves-light #00695c teal darken-3" onClick ={()=>PostData()}>SignUp 🔗 </button><br/>
-               <h5 style={{marginBottom:"10px"}}><Link to = '/signin' className = 'link' >Already have an account? 🤔</Link></h5>
+               <h5><Link to = '/signin' className = 'link' >Already have an account? 🤔</Link></h5>
           </div>
       </div>
     )

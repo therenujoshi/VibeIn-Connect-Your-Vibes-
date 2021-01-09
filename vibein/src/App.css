@@ -63,6 +63,7 @@ body {
   box-shadow : 0 1px 0 0 teal !important;
 }
 
+
 .gallery{
   display : flex;
   flex-wrap : wrap;
