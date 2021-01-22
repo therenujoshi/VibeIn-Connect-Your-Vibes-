@@ -11,7 +11,7 @@ const Home = ()=>{
             }
         }).then(res=>res.json())
         .then(result=>{
-            
+            //uconsole.log(result);
             setData(result.posts);
         })
     },[])
@@ -128,7 +128,7 @@ const Home = ()=>{
         })
     };*/
     return(
-        <div className = "home">
+        <div>
             {
                 data.map(item=>{
                     return (

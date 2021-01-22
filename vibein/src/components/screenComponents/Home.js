@@ -11,7 +11,7 @@ const Home = ()=>{
             }
         }).then(res=>res.json())
         .then(result=>{
-            
+          //  console.log(result);
             setData(result.posts);
         })
     },[])
@@ -128,16 +128,20 @@ const Home = ()=>{
         })
     };*/
     return(
-        <div className = "home">
+        <div>
             {
                 data.map(item=>{
                     return (
                         
                         <div className = "card home_card" key={item._id}>
-                              
-                            <h5 style = {{padding : "10px"}}>
-                            <Link to = {item.postedBy._id !== state._id?"/profile/"+item.postedBy._id : "/profile" }>{item.postedBy.name}</Link>{item.postedBy._id==state._id && <i className = "material-icons" style ={{float : "right", cursor : "pointer"}}
-                            onClick = {()=>deletePost(item._id)}>delete</i>}</h5>
+                            
+                           <h5 style = {{padding : "10px"}}>
+                            
+                        <Link to = {item.postedBy._id !== state._id?"/profile/"+item.postedBy._id : "/profile" }>{item.postedBy.name}</Link> 
+                          {item.postedBy._id==state._id && <i className = "material-icons" style ={{float : "right", cursor : "pointer"}}
+                           onClick = {()=>deletePost(item._id)}>delete</i> }</h5> 
+                        
+                            
                             <div className = "card-image">
                                 <img src = {item.photo} />
                             </div>

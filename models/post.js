@@ -22,6 +22,6 @@ const post_Schema = new mongoose.Schema({
         type:ObjectId, //id of user
         ref:"UserSchema"
     }
-});
+},{timestamps:true});
 
 mongoose.model("PostSchema",post_Schema);

@@ -5,7 +5,7 @@ const Profile =()=>{
     const [mypics,setPics] = useState([]);
     const {state, dispatch} = useContext(UserContext);
     const [image,setImage] = useState("");
-    const [url,setUrl] = useState("");
+   // const [url,setUrl] = useState("");
     useEffect(()=>{
         fetch('/my_posts',{
             headers:{
@@ -43,7 +43,7 @@ const Profile =()=>{
                    }).then(res=>res.json())
                    .then(result=>{
                        console.log(result)
-                       localStorage.setItem("user",JSON.stringify({...state,pic:data.pic}))
+                       localStorage.setItem("user",JSON.stringify({...state,pic:result.pic}))
                        dispatch({type:"UPDATEPIC", payload:result.pic})
                       // window.location.reload();
                     })

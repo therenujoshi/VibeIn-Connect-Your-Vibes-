@@ -10,6 +10,8 @@ import CreatePost from './components/screenComponents/CreatePost.js';
 import UserProfile from './components/screenComponents/UserProfile.js';
 import FollowUserPosts from './components/screenComponents/FollowUserPosts.js';
 import {reducer, initialState} from './reducers/userReducers.js';
+import Reset from './components/screenComponents/Reset.js';
+import NewPassword  from './components/screenComponents/NewPassword.js';
 export const UserContext = createContext();
 
 const Routing = ()=>{
@@ -19,8 +21,8 @@ const Routing = ()=>{
             const user = JSON.parse(localStorage.getItem("user"));
             if(user){
                   dispatch({type : "USER", payload : user});
-                  //history.push('/');
             }else{
+                  if(!history.location.pathname.startsWith('/reset'))
                   history.push('/signin');
             }
       },[]);
@@ -47,6 +49,13 @@ const Routing = ()=>{
             <Route path="/myfollowingposts" >
                   <FollowUserPosts />
             </Route>
+            <Route exact path="/reset">
+                 <Reset/>
+            </Route>
+            <Route path="/reset/:token">
+                 <NewPassword />
+            </Route>
+           
       </Switch>
 
 )

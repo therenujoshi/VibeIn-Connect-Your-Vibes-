@@ -82,13 +82,19 @@ body {
   margin : 26px auto;
 
 }
+.collection-item{
+  width: 100%;
+  color: #0d252b !important;
+}
 .fa {
   font-size: 25px;
   cursor: pointer;
   user-select: none;
   color:teal
 }
-
+.x{
+  color:white;
+}
 .fa:hover {
   color: red;
 }
