@@ -161,12 +161,14 @@ const Home = ()=>{
                                 } 
                                 
                                 
-                                <form onSubmit = {(e)=>{
+                                <form id = "myForm" onSubmit = {(e)=>{
                                      e.preventDefault()
                                      makeComment(e.target[0].value, item._id)
+                                     
                                 }}>
                                 <input type = "text" placeholder = "Add a comment"/>
                                 </form>
+                               
                             </div>
                         </div>
                     ) 
@@ -181,5 +183,5 @@ const Home = ()=>{
       /*{record.postedBy._id==state._id && <i className = "material-icons" style ={{float : "right", cursor : "pointer" }}
                                               onClick = {()=>deleteComment(record._id)}>delete</i>} */
       
-
+                                             
 export default Home;
